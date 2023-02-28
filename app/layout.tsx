@@ -24,8 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${playfair.variable} font-playfair`}>
-      <body className="bg-neutral-500">{children}</body>
+    <html lang="en" className={`${raleway.variable} font-raleway h-full`}>
+      <body className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
+        {children}
+      </body>
     </html>
   );
 }
