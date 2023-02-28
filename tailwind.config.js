@@ -6,7 +6,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        raleway: ["var(--font-raleway)"],
+        playfair: ["var(--font-playfair)"],
+      },
+    },
   },
   plugins: [],
 };

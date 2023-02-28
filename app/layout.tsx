@@ -1,4 +1,17 @@
 import "./globals.css";
+import { Inter, Raleway, Playfair_Display } from "next/font/google";
+
+const raleway = Raleway({
+  variable: "--font-raleway",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Test",
@@ -11,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${playfair.variable} font-playfair`}>
       <body className="bg-neutral-500">{children}</body>
     </html>
   );
