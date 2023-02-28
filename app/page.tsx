@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "./page.module.css";
-import Navbar from "./Navbar.tsx/page";
+import Navbar from "./components/Navbar.tsx/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main className="text-center mt-16">
       <Navbar />
     </main>
   );
